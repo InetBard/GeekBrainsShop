@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    .contactsForm {
+        grid-area: c;
+        width: 50%;
+    }
+    form{
+        margin-left: 20px;
+        width: 50%;
+        display: block;
+    }
+    .btns{
+        text-align: center;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    .info{
+        grid-area: i;
+        font-size: xx-large;
+        margin-left: 20px;
+    }
+    .info p{
+        font-size: medium;
+        color: #888;
+    }
+    .info span {
+        font-size: medium;
+    }
+</style>
+<body>
+<div class="bodyContacts">
+    <div class="header">
+        <br>
+        <ul>
+            <li><a href="../index.html">Main page</a></li>
+            <li><a href="../catalog/catalog.html">Catalog</a></li>
+        </ul>
+        <hr>
+        <h1>Send us a message</h1>
+    </div>
+    <form action="" class="contactsForm">
+        <fieldset>
+            <legend>Contact form</legend>
+            <ul>
+                <li><input type="text" autocomplete="on" placeholder="Your name"></li>
+                <br>
+                <li><input type="email" placeholder="Email"></li>
+                <br>
+                <li><label>
+                    <select>
+                        <option value="val1">Marketing questions</option>
+                        <option value="val1">Corporate questions</option>
+                        <option value="val1">Other</option>
+                    </select>
+                </label></li>
+                <br>
+                <li>Attaches: <br> <input type="file"></li>
+                <br>
+                <input type="text" style="width: 500px; height: 100px">
+            </ul>
+            <div class="btns">
+                <input class="btns" type="submit" value="SUBMIT">
+                <input class="btns" type="reset" value="RESET">
+            </div>
+        </fieldset>
+    </form>
+    <div class="info">
+        About us<br>
+        <b>____</b>
+        <p>Get in&nbsp;touch via contact form or&nbsp;email us&nbsp;<br> directly. We&nbsp;will get back to&nbsp;you as&nbsp;soon
+            <br>as&nbsp;possible.</p>
+        <a href="#">hello@hello.com</a><br>
+        <span>
+            ISRAEL<br>
+            <p>BarKochva 12A, Park Ave<br>
+            ISRAEL
+            (972) - 123 4567</p>
+        </span>
+    </div>
+    <footer>
+        <hr>
+        <span>&copy; All rights reserved 2020 <a href="https://geekbrains.ru" target="_blank">Geekbrains</a></span>
+    </footer>
+</div>
+
+</body>
+</html>

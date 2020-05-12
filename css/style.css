@@ -1,0 +1,208 @@
+/*General*/
+a{
+    text-decoration: none;
+}
+table{
+    border: 1px solid cadetblue;
+}
+td{
+    border: 1px solid cadetblue;
+}
+
+input{
+    font-family: "Raleway", "Open Sans", sans-serif;
+    color: #2b2b2b;
+    letter-spacing: 0;
+    font-size: 12px;
+}
+
+body{
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: #f8f8f7;
+}
+/*Body*/
+.bodyContacts{
+    display: grid;
+    grid-gap: 10px;
+    background: #f8f8f7;
+    grid-template-areas: "h h" "c i" "f f";
+    grid-template-rows: 180px 2fr 75px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bodyGoods{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "h" "c" "f";
+    grid-template-rows: 120px 3fr 75px;
+    grid-template-columns: 1fr;
+}
+
+.bodyCatalog{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "h" "c" "f";
+    grid-template-rows: 120px 3fr 75px;
+    grid-template-columns: 1fr;
+    background-image: url("../images/industry-metal-vintage-technology-239419.jpg");
+}
+
+.bodyMain{
+    display: grid;
+    /*grid-gap: 10px;*/
+    grid-column-gap: 0;
+    grid-row-gap: 10px;
+    grid-template-areas: "h hn" "c c" "f f";
+    grid-template-rows: 120px 6fr 80px;
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../images/car-vehicle-technology-chrome-2027045.jpg");
+}
+
+.bodyBMC{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "h" "c" "f";
+    grid-template-rows: 120px 3fr 75px;
+    grid-template-columns: 1fr;
+}
+/*Headers*/
+.header{
+    grid-area: h;
+    height: 110px;
+    width: 100%;
+    color: #888;
+    background: #2b2b2b;
+    padding-top: 5px;
+}
+
+.headerShopNameText{
+    /*grid-area: hn;*/
+    grid-column: 2 ;
+    grid-row: 1;
+    grid-column-gap: 0;
+    height: 110px;
+    /*width: 50%;*/
+    padding-top: 5px;
+    text-align: right;
+    background: #2b2b2b;
+    padding-right: 13px;
+}
+
+.header ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.header li{
+    border: 1px solid cadetblue;
+    width: 110px;
+    text-align: center;
+}
+
+.header li:nth-child(2n){
+    background-color: yellowgreen;
+}
+
+.header li:hover:after{
+    content: " >>";
+    color: maroon;
+}
+
+.header a{
+    font-size: larger;
+    color: #888;
+
+}
+.header a:hover{
+    color: maroon;
+}
+.header a:active{
+    color: darkgoldenrod;
+}
+.header li:first-child{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.header li:last-child{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.headerShopNameText h1{
+    text-align: right;
+    font-family: "Raleway", "Open Sans", sans-serif;
+    color: #f8f8f7;
+    letter-spacing: 0;
+    font-size: 38px;
+}
+/*Content*/
+
+.content{
+    grid-area: c;
+}
+
+.content li:first-letter{
+    font-size: 30px;
+    color: brown;
+}
+
+.content img{
+    width: 350px;
+    height: 260px;
+    padding-left: 15px;
+}
+
+.contentCatalog{
+    grid-area: c;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 70vh;
+    text-align: center;
+    margin-top: 60px;
+}
+.contentCatalog img{
+    width: 350px;
+    height: 260px;
+    align-self: center;
+}
+
+.catalogImg{
+    border-color: darkgray;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: #2b2b2b;
+}
+
+.contentCatalog a {
+    color: #f8f8f7;
+}
+
+.contentMainPage{
+    grid-area: c;
+    padding-top: 20%;
+    height: 500px;
+    text-align: center;
+    vertical-align:  baseline;
+    color: maroon;
+    font-size: 30px;
+    font-weight: bolder;
+}
+/*Footer*/
+footer{
+    grid-area: f;
+    height: 80px;
+    padding-top: 23px;
+    color: #888;
+    background: #2b2b2b;
+}
+footer a{
+    color: #888;
+}
+footer span{
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
